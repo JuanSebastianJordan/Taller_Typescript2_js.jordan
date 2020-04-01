@@ -28,27 +28,8 @@
                                 <thead >
                                     
                                 </thead>
-                                <tbody >
-                                    <tr >
-                                        <td >Código</td>           
-                                        <td>201819968</td>
-                                                
-                                    <tr >
-                                        <td>Cédula</td>
-                                        <td>1014306996</td>
-                                    </tr>
-                                    <tr >
-                                        <td>Edad</td>
-                                        <td>20 Años</td>
-                                    </tr>
-                                    <tr >
-                                        <td>Dirección</td>
-                                        <td>Carrera 99 # 69a-40</td>
-                                    </tr>
-                                    <tr >
-                                        <td>Teléfono</td>
-                                        <td>3112311022</td>
-                                    </tr>
+                                <tbody id="students">
+
                                 </tbody>  
                               
                             </table>
@@ -61,16 +42,37 @@
                 <div class="row" >
                     <div class="col" style="border-style: solid; border-width: 1px; border-color: lightgray;">
                         <h2 style="padding: 3%;">Cursos Actuales</h2>
-                        <form style="margin:10px; padding-left: 3%;">
-                            <div class="form-row">
-                              <div class="col">
-                                  <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
-                              </div>
-                              <div class="col">
-                                  <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
-                              </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Filtrar por nombre</h5>
+                                <form style="margin:10px; padding-left: 3%;">
+                                    <div class="form-row">
+                                      <div class="col">
+                                          <input type="text" class="form-control" id="search-box" placeholder="Nombre">
+                                      </div>
+                                      <div class="col">
+                                          <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                                      </div>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                            <div class="col">
+                                <h5>Filtrar por creditos</h5>
+                                <form style="margin:10px; padding-left: 3%;">
+                                    <div class="form-row">
+                                      <div class="col">
+                                          <input type="number" class="form-control" id="search-box-cr" placeholder="Inferior">
+                                          <input type="number" class="form-control" id="search-box-cr2" placeholder="Superior">
+                                      </div>
+                                      <div class="col">
+                                          <button type="button" id="button-filterByCredits" class="btn btn-success">Aplicar</button>
+                                      </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        
                         <table class="table" style="padding: 5%;">
                                 <thead class="thead-dark">
                                    
@@ -95,5 +97,7 @@
     <script type="module" src="./scripts/course.js" ></script>
     <script type="module" src="./scripts/dataCourses.js" ></script>
     <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/student.js"></script>
+    <script type="module" src="./scripts/dataStudents.js"></script>
 </body>
 </html>
